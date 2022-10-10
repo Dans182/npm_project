@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Dans182/npm_project/issues"
   },
-  "homepage": "https://github.com/Dans182/npm_project#readme"
+  "homepage": "https://github.com/Dans182/npm_project#readme",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
 }
