@@ -94,5 +94,7 @@ Por ejemplo, acá creo el script start, que hará uso de la terminal, gracias al
     "start": "node src/index.js",
 
 npm => node package manager =>
-npx => node package execute => Nos permite ejecutar acciones particulares i
-    
+npx => node package execute => Nos permite ejecutar acciones particulares sin tener que pasar por la instalación dentro de nuestra computadora.
+Antes era necesario instalar el paquete y despues ejecutar las instancias. Con npx nos ahorramos esto.
+
+https://www.freecodecamp.org/espanol/news/npm-vs-npx-cual-es-la-diferencia/
