@@ -1,35 +1,36 @@
-
 Se instala Node.Js desde nodejs.org
 
+De las siguientes dos maneras, sabemos la versión de Node y de npm(Node Package Manager)
 node -v
 npm -v
 
-git init
-npm init inicializa nuestro proyecto
+Al empezar un repositorio, ejecutamos los siguientes comandos:
 
+git init => Nos va a permitir enlazar nuestro repositorio a algún servicion de nube de código.
 
+npm init => inicializa nuestro proyecto y nos abre un configurador que debemos ir cumplimentando:
 
     “package name”: “npm-init” —> Podemos ponerle un nombre sin embargo toma por defecto el de la carpeta.
 
-    “version”: “1.0.0” —> Podemos cambiar segun el caso, dependiendo un cambio mayor o uno menor
+    “version”: “1.0.0” —> Podemos cambiar la versión segun el caso, dependiendo si se efectua un cambio mayor o uno menor
 
     “description”:"" —> Podemos hacer una breve descripcion del proyecto.
 
     “entry point”: “(index.js)” —> Punto de entrada del proyecto.
 
-    “test command”: —> Podemos incluir los comandos para validar nuestro codigo.
+    “test command”: —> Podemos incluir los comandos para validar nuestro codigo con las pruebas de integración o las unitarias.
 
     “git repository”: —> Podemos incluir el repositorio para mantenerlo en la nube
 
     “keywords”: [“javascript”, “angular”, “node”] —> Que va a utilizar nuestro proyecto.
 
-    “author”: "Alexa Pulido<pulidoaleXXXXXXX> —> Persona que crea el proyecto
+    “author”: "Alexa Pulido<pulidoaleXXXXXXX> —> Persona que crea el proyecto (Nombre, apellido e email)
 
     “license”: “MIT” —> Licencias, la mas utilizada es MIT, permite distribuir nuestro codigo.
 
-ce 11 horas
+npm init -y => Esto nos crea el archivo package.json con una configuración por defecto y posteriormente podemos modificar lo que necesitemos modificar.
 
-    💡 Hola! las dependencias son importantes ya que con estas podemos reutilizar codigo de otros desarroladores de una forma rapida y sencilla, para instalar dependecias podemos hacerlo a travez de npm y yarn
+💡 Hola! las dependencias son importantes ya que con estas podemos reutilizar codigo de otros desarroladores de una forma rapida y sencilla, para instalar dependecias podemos hacerlo a travez de npm y yarn
 
 ¿Como Instalar una Dependecia?
 
