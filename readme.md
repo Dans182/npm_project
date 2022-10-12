@@ -30,7 +30,7 @@ npm init => inicializa nuestro proyecto y nos abre un configurador que debemos i
 
 npm init -y => Esto nos crea el archivo package.json con una configuración por defecto y posteriormente podemos modificar lo que necesitemos modificar.
 
-💡 Hola! las dependencias son importantes ya que con estas podemos reutilizar codigo de otros desarroladores de una forma rapida y sencilla, para instalar dependecias podemos hacerlo a travez de npm y yarn
+Las dependencias son importantes ya que con estas podemos reutilizar codigo de otros desarroladores de una forma rapida y sencilla, para instalar dependecias podemos hacerlo a través de npm, yarn, entre otros.
 
 ¿Como Instalar una Dependecia?
 
@@ -40,30 +40,34 @@ npm install <nombre de la dependecia>
 
 Dependecias de Desarrollo
 
-Al agregar --save-dev despues del nombre de la dependendecia estamos especificando que solo vamos a utillizar la dependecia en el entorno de desarrollo. Asi mismo podemos utilizar -D despues del nombre de la dependecia
+Al agregar --save-dev despues del nombre de la dependendecia estamos especificando que solo vamos a utillizar la dependecia en el entorno de desarrollo y no se llevará al entorno de producción. Asi mismo podemos utilizar el flag -D despues del nombre de la dependecia.
 
 npm install <nombre de la dependecia> --save-dev
-
-#Tambien podemos utilizar
-
 npm install <nombre de la dependecia> -D
 
 Dependencias de Producción
 
-Al agregar —-save despues del nombre de la dependecia estamos especificando que es una dependecia que utilizara en producción
+Al no agregar nada, solo el npm install o al agregar —-save despues del nombre de la dependecia estamos especificando que es una dependecia que utilizara tanto en desarrollo como en producción.
 
+npm install <nombre de la dependecia>
+npm install <nombre de la dependecia> -S
 npm install <nombre de la dependecia> --save
 
 Dependencias Globales
 
+Estos no están ligados directamente a nuestro proyecto, sino a nuestro sistema operativo.
 Al agregar —g antes del nombre de la dependecia, estamos especificando que la dependecia que estamos instalando esta en el scope global
 
-npm install -g <nombre de la dependecia>
+npm install -g <nombre del paquete>
+
+Con npm list => puedo saber que paquetes tengo instalado en mi repositorio. Aca veo la lista de paquetes que están agregados en el proyecto.
+
+Con npm list -g => Acá veo que paquetes tengo instalados de forma global.
 
 
-
-
-
+Las dependencias de desarrollo son aquellos paquetes que necesitamos en un proyecto mientras estamos desarrollándolo, pero una vez tenemos el código generado del proyecto, no vuelven a hacer falta. Los paquetes instalados con el flag --save-dev o -D se instalan en esta modalidad, guardándolos en la sección devDependences del fichero package.json.
+.
+Por otro lado, las dependencias de producción son aquellos paquetes que necesitamos tener en la web final generada, como librerías Javascript necesarias para su funcionamiento o paquetes similares. Los paquetes instalados con el flag --save-prod, -P o directamente sin ningún flag se instalan en esta modalidad, guardándolos en la sección dependences del fichero package.json.
 
     1) `npm install package-name -o` → Instalar de forma opcional una dependencia.
 
