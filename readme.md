@@ -92,3 +92,7 @@ Por ejemplo, acá creo el script start, que hará uso de la terminal, gracias al
 
 "scripts": {
     "start": "node src/index.js",
+
+npm => node package manager =>
+npx => node package execute => Nos permite ejecutar acciones particulares i
+    
